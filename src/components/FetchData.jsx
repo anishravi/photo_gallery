@@ -9,7 +9,7 @@ const FetchData = () => {
     fetch(url + page)
       .then((response) => response.json())
       .then((data) => {
-        let datawithLikes = data.map((item)=>({...item,like:0}))
+        let datawithLikes = data.map((item) => ({ ...item, like: 0 }));
         setState((prevState) => [...prevState, ...datawithLikes]);
       });
   }, [page]);
@@ -45,7 +45,12 @@ const FetchData = () => {
             <div className="container" key={item.id}>
               <img src={item.download_url} height={250} width={250} alt="" />
               <p>Author: {item.author}</p>
-              <i class="fa-solid fa-thumbs-up" onClick={()=>handleLike(item.id)} style={{ color: "#0c6df9" }} /><p>{item.like === 0 ? "" : item.like}</p>
+              <i
+                className="fa-solid fa-thumbs-up"
+                onClick={() => handleLike(item.id)}
+                style={{ color: "#0c6df9" }}
+              />
+              <p>{item.like === 0 ? "" : item.like}</p>
             </div>
           );
         })}
