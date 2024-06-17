@@ -1,8 +1,27 @@
-# React + Vite
+# Photo Gallery
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Steps to View the Work
 
-Currently, two official plugins are available:
+1. **Ensure Node.js is Installed**
+   - Make sure you have Node.js installed on your machine. You can download it from [Node.js official website](https://nodejs.org/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. **Clone or Download the Repository**
+   - Clone the repository using the command:
+     ```sh
+     git clone https://github.com/your-username/your-repo-name.git
+     ```
+   - Alternatively, you can download the repository as a ZIP file and extract it.
+
+3. **Install Dependencies**
+   - Navigate to the project directory and run the following command to install the necessary dependencies:
+     ```sh
+     npm install
+     ```
+
+4. **Run the Application**
+   - Start the development server using the command:
+     ```sh
+     npm run dev
+     ```
+
+You should now be able to view and interact with the Photo Gallery application.
