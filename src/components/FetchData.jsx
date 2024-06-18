@@ -38,7 +38,9 @@ const FetchData = () => {
 
   return (
     <div>
-      <h1 style={{ marginLeft: "950px" }}>Photo Gallery</h1>
+      <h1 style={{ display: "flex", justifyContent: "flex-end", width: "80%" }}>
+        Photo Gallery
+      </h1>
       <div className="mainContainer">
         {state?.map((item) => {
           return (
