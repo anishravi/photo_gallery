@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 const FetchData = () => {
-  const [state, setState] = useState([]);
+  const [data, setData] = useState([]);
   const url = "https://picsum.photos/v2/list?page=";
   const [page, setPage] = useState(1);
 
@@ -10,7 +10,7 @@ const FetchData = () => {
       .then((response) => response.json())
       .then((data) => {
         let datawithLikes = data.map((item) => ({ ...item, like: 0 }));
-        setState((prevState) => [...prevState, ...datawithLikes]);
+        setData((prevState) => [...prevState, ...datawithLikes]);
       });
   }, [page]);
 
@@ -29,7 +29,7 @@ const FetchData = () => {
   }, []);
 
   const handleLike = (id) => {
-    setState((prevState) =>
+    setData((prevState) =>
       prevState.map((item) =>
         item.id === id ? { ...item, like: item.like + 1 } : item
       )
