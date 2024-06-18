@@ -42,7 +42,7 @@ const FetchData = () => {
         Photo Gallery
       </h1>
       <div className="mainContainer">
-        {state?.map((item) => {
+        {data?.map((item) => {
           return (
             <div className="container" key={item.id}>
               <img src={item.download_url} height={250} width={250} alt="" />
